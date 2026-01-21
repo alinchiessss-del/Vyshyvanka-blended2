@@ -37,6 +37,7 @@ a {
     margin: 0 auto;
 }
 
+/* HEADER */
 .header .container {
     display: flex;
     align-items: center;
@@ -130,14 +131,14 @@ a {
     fill: #f4f4fd;
 }
 
+/* HERO SECTION */
 .hero-section {
-    padding-top: 120px;
-    padding-bottom: 150px;
+    padding-bottom: 0;
 }
 
 .hero-section .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
     padding-top: 100px;
     padding-bottom: 150px;
@@ -145,6 +146,7 @@ a {
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
+    position: relative;
 }
 
 .hero-title {
@@ -200,13 +202,19 @@ a {
 
 .hero-badge-icon {
     fill: #ECD979;
+}
+
+.hero-badge {
     position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 8px;
     top: 132px;
     right: 218px;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+
+    text-align: center;
 }
 
 .hero-badge-text {
@@ -216,3 +224,121 @@ a {
     text-align: center;
     color: rgba(252, 249, 249, 0.4);
 }
+
+/* ABOUT US SECTION */
+
+.about-us {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about-us-content {
+    padding: 75px 50px 75px 0;
+}
+
+.about-title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.45;
+    letter-spacing: -0.03em;
+    color: #fcf9f9;
+}
+
+.about-us-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.04em;
+    color: rgba(252, 249, 249, 0.4);
+}
+
+.about-us-text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.about-us-image {
+    position: relative;
+    flex-shrink: 0;
+}
+
+
+.about-us-vysh {
+    display: block;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.icon-background {
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    z-index: 0;
+    pointer-events: none;
+    fill: #FCF9F9;
+    opacity: 0.1;
+}
+
+/* OUR COLLECTION */
+.container-collection {
+    margin-bottom: 150px;
+}
+
+.yellow-icon {
+    position: absolute;
+    fill: #ecd979;
+
+
+}
+
+.collection-title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.45;
+    letter-spacing: -0.03em;
+    color: #fcf9f9;
+    text-align: center;
+}
+
+.collection-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.collection-item {}
+
+.item-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fcf9f9;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: rgba(252, 249, 249, 0.4);
+}
+
+/* BIG IMAGE SECTION */
+.big-image {
+    max-width: 100%;
+    margin-bottom: 150px;
+}
+
+/* ORDER SECTION */
