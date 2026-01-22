@@ -213,6 +213,7 @@ alt="girl"
   height="776">
 </section>
 
+<!-- ORDER SECTION -->
 <section class="order-section">
   <div class="order-container">
     <!-- left -->
@@ -221,8 +222,10 @@ alt="girl"
         src="./images/order-image.png"
         alt="Embroidered blouse detail"
         width="524"
-        height="521"
-      />
+        height="521"/>
+        <svg class="icon-order" width="325" height="484">
+          <use href="./images/icons-hero.svg#icon-order-element"></use>
+        </svg>
     </div>
 
     <!-- right -->
@@ -232,7 +235,7 @@ alt="girl"
         Personalized approach and quality of service
       </h2>
 
-      <form class="order-form" name="order_form" autocomplete="on">
+      <form class="order-form" name="order_form">
         <div class="order-field">
           <label class="order-label" for="order-name"></label>
           <input
@@ -278,8 +281,61 @@ alt="girl"
     </div>
   </div>
 </section>
+<!-- TESTIMONIALS SECTION -->
+
+ <section class="testimonials">
+  <div class="container-testimonials">
+    <h2 class="testimonials-title">Testimonials</h2>
+    <ul class="testimonials-list">
+      <li class="testimonial-card">
+        <img class="testimonial-avatar"
+        src="./images/maria-test.png" alt="Maria Tkachuk-photo"
+        width="64"
+        height="64"/>
+        <h3 class="testimonial-name">Maria Tkachuk</h3>
+        <p class="testimonial-text">I was pleasantly surprised by the variety of embroidery offered by Vyshyvanka Vibes. They have models for every taste - from classic to modern. I bought an embroidered dress to celebrate a special occasion and received impeccable service and refinement in every detail. </p>
+      </li>
+      <li class="testimonial-card">
+        <img class="testimonial-avatar" src="./images/sergey-test.png" alt="Sergey Rybachok-photo"
+        width="64"
+        height="64"/>
+        <h3 class="testimonial-name">Sergey Rybachok</h3>
+        <p class="testimonial-text">Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka are simply masterpieces! I fell in love with the quality of the materials and the skill of the artisans behind each product. This is my favorite embroidery shop where I always find something special and unique.</p>
+      </li>
+      <li class="testimonial-card">
+        <img class="testimonial-avatar" src="./images/natalia-test.png" alt="Natalia Chatuk-photo"
+        width="64"
+        height="64"/>
+        <h3 class="testimonial-name">Natalia Chatuk</h3>
+        <p class="testimonial-text">Vyshyvanka Vibes is a real find for everyone who appreciates Ukrainian culture. Their embroidery reflects the spirit and traditions of our people. I not only buy embroidered shirts for myself, but also give them to my friends abroad as a symbol of our beauty and national pride.</p>
+      </li>
+    </ul>
+  </div>
+ </section>
     </main>
-    <footer></footer>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li> <a href="">ABOUT US</a></li>
+              <li> <a href="">OUR COLLECTION </a></li>
+              <li> <a href="">CUSTOMER ORDER</a></li>
+              <li> <a href="">TESTIMONIALS</a></li>
+            </ul>
+         </nav>
+         <p class="footer-text">A touch of <span class="footer-accent">Ukrainian</span> culture in every embroidery</p>
+       </div>
+     </div>
+
+     <div class="footer-decor">
+      <svg class="footer-icon" width="496" height="363">
+        <use href="./images/icons-hero.svg#icon-footer-element"></use>
+      </svg>
+     </div>
+    </footer>
   </body>
 </html>
 
